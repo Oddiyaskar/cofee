@@ -1,0 +1,219 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans" "Arial" "sans serif";
+    font-size: 18px;
+    line-height: normal; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/barlow-v12-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* fraunces-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v31-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* CSS */
+
+li,a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    margin-top: 10px;
+}
+
+.container {
+    width: 1320px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item + .nav__item {
+    padding-left: 33px;
+}
+
+.nav__link {
+    margin: 0;
+    padding: 0;
+    color: #83888F;
+    font-family: "Barlow";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; 
+    text-transform: uppercase;
+}
+
+.nav__link:hover {
+    color: black;
+}
+
+.hero .container {
+    background-image: url("../img/Bitmap.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1280px;
+    height: 600px;
+    margin-top: 40px;
+}
+
+.hero__title {
+    margin: 0;
+    padding: 0;
+    color: #FEFCF7;
+    font-family: "Fraunces";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px; 
+    padding-top: 100px;
+    margin-left: 33px;
+    width: 493px;
+    padding-bottom: 32px;
+}
+
+.hero__text {
+    margin: 0;
+    padding: 0;
+    color: #FEFCF7;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.8;
+    padding-bottom: 56px;
+    margin-left: 33px; 
+    width: 400px;
+}
+
+.hero__button {
+    border-radius: 6px;
+    background: #66D2CF;
+    color: #FEFCF7;
+    text-align: center;
+    font-family: "Fraunces";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px; 
+    padding: 15px 31px;
+    margin-left: 40px;
+}
+
+.about .container {
+    background-image: url("../img/collection.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1111px;
+    height: 196px;
+    margin-top: 60px;
+}
+
+/* .about__info {
+    margin-top: 95px;
+} */
+
+.about__list {
+    display: flex;
+}
+
+.about__item {
+    padding-left: 20px;
+}
+
+.about__img {
+    margin-left: -5px;
+    padding-bottom: 72px;
+    transform: translateY(130px);
+    margin-bottom: 80px;
+}
+
+.about__title {
+    margin: 0;
+    padding: 0;
+    color: #333D4B;
+    text-align: center;
+    font-family: "Fraunces";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; 
+    padding-bottom: 24px;
+}
+
+.about__text {
+    margin: 0;
+    padding: 0;
+    color: #333D4B;
+    text-align: center;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+}
